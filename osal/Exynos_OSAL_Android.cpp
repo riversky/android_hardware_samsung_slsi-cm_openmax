@@ -362,9 +362,9 @@ OMX_ERRORTYPE Exynos_OSAL_RefANB_Increase(OMX_HANDLETYPE hREF, OMX_PTR pBuffer)
     private_handle_t    *priv_hnd       = (private_handle_t *)bufferHandle;
     gralloc_module_t    *module         = NULL;
 
-    unsigned long *pIonHandle  = NULL;
-    unsigned long *pIonHandle1 = NULL;
-    unsigned long *pIonHandle2 = NULL;
+    int pIonHandle  = 0;
+    int pIonHandle1 = 0;
+    int pIonHandle2 = 0;
     int i;
 
     FunctionIn();

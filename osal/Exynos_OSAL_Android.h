@@ -38,9 +38,9 @@ typedef struct _EXYNOS_OMX_SHARED_BUFFER {
     OMX_S32 BufferFd;
     OMX_S32 BufferFd1;
     OMX_S32 BufferFd2;
-    unsigned long *pIonHandle;
-    unsigned long *pIonHandle1;
-    unsigned long *pIonHandle2;
+    int pIonHandle;
+    int pIonHandle1;
+    int pIonHandle2;
     OMX_U32 cnt;
 } EXYNOS_OMX_SHARED_BUFFER;
 
